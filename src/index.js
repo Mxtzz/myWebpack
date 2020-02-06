@@ -1,6 +1,7 @@
 import _ from 'lodash';
 import './style.css';
 import img1 from './img1.jpg';
+import Data from './data.xml';
 
 function component() {
     let element = document.createElement('div');
@@ -12,6 +13,8 @@ function component() {
     myImg.src = img1;
     myImg.height = 200;
     element.appendChild(myImg);
+
+    console.log(Data);
 
     return element;
 }
